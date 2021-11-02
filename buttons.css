@@ -28,6 +28,7 @@ img {
   position: absolute;
   top: 1em;
   left: 1em;
+  opacity: 90%;
 }
 #opt2 {
   background-color: #79afd4;
@@ -39,6 +40,7 @@ img {
   position: absolute;
   top: 1em;
   left: 1em;
+  opacity: 90%;
 }
 #opt3 {
   background-color: #e2de00;
@@ -50,6 +52,7 @@ img {
   position: absolute;
   top: 1em;
   left: 1em;
+  opacity: 90%;
 }
 
 #outlined {
@@ -69,6 +72,7 @@ img {
 
 #gradient {
   border: 0;
+  border-radius: 0;
   padding: 0.3em;
   background: linear-gradient(
     -45deg,
@@ -80,7 +84,7 @@ img {
   );
   background-size: 300%;
   background-position: left;
-  transition: background-position 1s;
+  transition: background-position 1s, border-radius 0.3s;
   margin: 2em;
   padding: 0.7em;
   font-size: 1.3rem;
@@ -89,6 +93,7 @@ img {
 #gradient:focus,
 #gradient:hover {
   background-position: right;
+  border-radius: 0px 30px;
 }
 
 #both {
