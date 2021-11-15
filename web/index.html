@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7729b06534.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="silfen.css">
     <title>Silfen Webshop</title>
 
 </head>
@@ -35,32 +35,68 @@
         </div>
         <h4>SCROLL <span><i class="fas fa-chevron-down"></i></span></h4>
     </section>
-    <section id="filter-nav">
+    <!-- <section id="filter-nav">
         <div id="filter-drop">
             <h3 id="drop-txt">DROP <span><i class="fas fa-chevron-right"></i></span></h3>
             <template id="drop">
-                <a href="filter.html"></a>
+                <a href="" class="drop-link"></a>
             </template>
         </div>
         <div id="filter-mat">
             <h3 id="mat-txt">MATERIAL <span><i class="fas fa-chevron-right"></i></span></h3>
             <template id="mat">
-                <a href="filter.html"></a>
+                <a href="" class="mat-a"></a>
             </template>
         </div>
         <div id="filter-type">
             <h3 id="type-txt">TYPE <span><i class="fas fa-chevron-right"></i></span></h3>
             <template id="type">
-                <a href="filter.html"></a>
+                <a href="" class="type-a"></a>
             </template>
         </div>
         <div id="filter-color">
             <h3 id="color-txt">COLOR <span><i class="fas fa-chevron-right"></i></span></h3>
             <template id="color">
-                <a href="filter.html"></a>
+                <a href="" class="color-a"></a>
             </template>
         </div>
+    </section> -->
+    <section id="filter-nav">
+        <div id="filter-drop">
+            <h3 id="drop-txt">DROP <span><i class="fas fa-chevron-right"></i></span></h3>
+            <ul>
+                <li><a href="">PROM</a></li>
+            </ul>
+        </div>
+        <div id="filter-mat">
+            <h3 id="mat-txt">MATERIAL <span><i class="fas fa-chevron-right"></i></span></h3>
+            <ul>
+                <li><a href="">Recycled Nylon</a></li>
+                <li><a href="">Vegan Leather</a></li>
+                <li><a href="">Leather</a></li>
+            </ul>
+        </div>
+        <div id="filter-type">
+            <h3 id="type-txt">TYPE <span><i class="fas fa-chevron-right"></i></span></h3>
+            <ul>
+                <li>Cross-body Bags</a></li>
+                <li>Handbags</a></li>
+            </ul>
+        </div>
+        <div id="filter-color">
+            <h3 id="color-txt">COLOR <span><i class="fas fa-chevron-right"></i></span></h3>
+            <ul>
+                <li><a href="">Angora</a></li>
+                <li><a href="">Cadet</a></li>
+                <li><a href="">Ensigned Blue</a></li>
+                <li><a href="">Galaxy</a></li>
+                <li><a href="">Icy Morning</a></li>
+                <li><a href="">Tangerine</a></li>
+                <li><a href="">Wasabi</a></li>
+            </ul>
+        </div>
     </section>
+
     <main>
         <div id="some">
             <ul>
@@ -69,29 +105,62 @@
                 <li><i class="fab fa-tiktok"></i></li>
             </ul>
         </div>
-        <section id="bag-grid">
+        <section class="bag-grid">
             <template id="bag-template">
                 <div class="bag-card">
                     <a class="bag-link" href="">
                         <div class="container">
                             <img class="bag-pic" src="" alt="">
-                            <img src="" alt="" class="bag-pic2">
+                            <!-- <img src="" alt="" class="bag-pic2"> -->
                             <div class="material"></div>
                             <div class="fav-icon"><i class="far fa-heart"></i>
-                                <!-- <i class="fas fa-heart"></i> -->
+                                <i class="fas fa-heart"></i>
                             </div>
                             <div class="sold-out-tag">Sold Out <span><i class="far fa-tired"></i></span></div>
+                            <!-- <div class="quickview">QUICKVIEW <span><i class="fas fa-search"></i></span></div> -->
                         </div>
                     </a>
-                    <a class="card-title" href="bag.html"></a>
+                    <a href="" class="card-title"></a>
                     <p class="color-name"> </p>
                     <p class="price"></p>
                     <p class="off"></p>
                 </div>
             </template>
         </section>
+        <section id="pop-up" class="hidden">
+            <i class="fas fa-times"></i>
+            <img src="" alt="" id="qv-img1">
+            <img src="" alt="" id="qv-img2">
+            <img src="" alt="" id="qv-img3">
+        </section>
     </main>
-
+    <footer>
+        <ul class="footer-list">
+            <li>HELP</li>
+            <li>About</li>
+            <li>Sustainability</li>
+            <li>Order Tracking</li>
+            <li>Currency</li>
+            <li>Contact</li>
+        </ul>
+        <div class="address">
+            <p>SILFEN STUDIO</p>
+            <p>Klareboderne 10, 1.
+                1115 Copenhagen K
+                Denmark
+            </p>
+            <p>Phone: +45 20518923 <br>
+                VAT: DK40912320</p>
+        </div>
+        <div class="warehouse">
+            <p>WAREHOUSE</p>
+            <p>Adax A/S, Att: Silfen Studio <br>
+                Vestre Hedevej 18 <br>
+                DK-4000 Roskilde<br>
+                Denmark</p>
+        </div>
+    </footer>
 </body>
+<script src="silfen.js"></script>
 
 </html>

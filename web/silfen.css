@@ -1,3 +1,44 @@
-body {
-  background-color: hotpink;
+.hidden {
+  visibility: hidden;
+}
+
+.bag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.bag-grid img {
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+.opt1 {
+  background-color: #add4b2;
+  width: max-content;
+  padding: 0.2em;
+  margin: 0.3em;
+  color: white;
+  border-radius: 0px 10px;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  opacity: 90%;
+}
+.opt2 {
+  background-color: #79afd4;
+  width: max-content;
+  padding: 0.2em;
+  margin: 0.3em;
+  color: white;
+  border-radius: 0px 10px;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  opacity: 90%;
 }
