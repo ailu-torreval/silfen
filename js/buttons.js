@@ -1,4 +1,4 @@
-fetch("http://magmadesign.dk/wp21/wp-json/wp/v2/bag?_embed")
+fetch("http://magmadesign.dk/wp21/wp-json/wp/v2/bag?_embed&per_page=100")
   .then((res) => res.json())
 
   .then(gotData);
@@ -18,6 +18,7 @@ function showBags(bag) {
     clone.querySelector(".material").classList.add("opt2");
   }
   clone.querySelector(".bag-img").src = bag.front_img.guid;
+  // clone.querySelector(".bag-img2").src = bag.model_img.guid;
 
   const parent = document.querySelector("#dynamic-grid");
   parent.appendChild(clone);

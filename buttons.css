@@ -235,19 +235,6 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.material {
-  /* background-color: #add4b2;
-  width: max-content;
-  padding: 0.2em;
-  margin: 0.3em;
-  color: white;
-  border-radius: 0px 10px;
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  opacity: 90%; */
-}
-
 .img-card {
   position: relative;
 }
