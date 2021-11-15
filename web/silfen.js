@@ -11,6 +11,7 @@ function showBags(bag) {
   console.log(bag);
   const shCard = document.querySelector("#bag-template").content;
   const clone = shCard.cloneNode(true);
+  clone.querySelector(".bag-card").setAttribute("class", bag.color);
   clone.querySelector(".material").textContent = bag.material;
   if (bag.material === "Recycled Nylon") {
     clone.querySelector(".material").classList.add("opt1");
@@ -31,6 +32,26 @@ function showBags(bag) {
 
   const parent = document.querySelector(".bag-grid");
   parent.appendChild(clone);
+}
+
+const btns = document.querySelectorAll(".btn");
+const storeProducts = document.querySelectorAll(".bag-card");
+
+for (i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const filter = e.target.dataset.filter;
+    console.log(filter);
+    storeProducts.forEach((product) => {
+      if (product.classList.contains(filter)) {
+        console.log(product);
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  });
 }
 
 {
