@@ -17,6 +17,16 @@ function showBags(bag) {
   } else {
     clone.querySelector(".material").classList.add("opt2");
   }
+  if (bag.sold_out >= 1) {
+    clone.querySelector(".sold-out-tag").classList.remove("hidden");
+    clone.querySelector(".bag-pic").classList.add("opacity");
+  }
+
+  if (bag.discount_price > 0) {
+    clone.querySelector(".off").classList.remove("hidden");
+    clone.querySelector(".off").textContent = `${bag.discount_price} kr.`;
+    clone.querySelector(".price").classList.add("old-price");
+  }
   clone.querySelector(".bag-pic").src = bag.front_img.guid;
   // clone.querySelector(".bag-img2").src = bag.model_img.guid;
   clone.querySelector(".card-title").textContent = bag.model;

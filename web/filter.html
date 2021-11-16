@@ -13,15 +13,16 @@
 
 <body>
     <header>
-        <ul>
+        <ul class="header-nav">
             <li>SHOP</li>
             <li>ABOUT</li>
             <li>SUSTAINABILITY</li>
             <li>SILFEN PLAY</li>
-            <li>PRE-LOVED</li>
+            <li class="pre-loved">PRE-LOVED</li>
         </ul>
-        <div></div>
-        <ul>
+        <a href="index.html" class="header-img"><img src="/assets/silfen-logo-black.png" alt=""></a>
+        <!-- <div></div> -->
+        <ul class="header-icons">
             <li><i class="far fa-user"></i></li>
             <li><i class="fas fa-search"></i></li>
             <li><i class="far fa-heart"></i></li>
@@ -39,7 +40,7 @@
         <div id="filter-drop">
             <h3 id="drop-txt">DROP <span><i class="fas fa-chevron-right"></i></span></h3>
             <ul>
-                <li><a href="">PROM</a></li>
+                <li><a href="index.html">PROM</a></li>
             </ul>
         </div>
         <div id="filter-mat">
@@ -53,7 +54,7 @@
             <h3 id="type-txt">TYPE <span><i class="fas fa-chevron-right"></i></span></h3>
             <ul>
                 <li><a href="filter.html?category=7">Crossbody Bags</a></li>
-                <li><a href="filter.html?category=8">Shoulder Bags</a></li>
+                <li><a href="filter.html?cateogry=8">Shoulder Bags</a></li>
             </ul>
         </div>
         <div id="filter-color">
@@ -84,12 +85,11 @@
         </div>
     </section>
     <main>
-        <h2 id="cat-title"></h2>
-        <div id="some">
+        <div class="some">
             <ul>
-                <li><i class="fab fa-facebook-square"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-tiktok"></i></li>
+                <li><a href="https://www.facebook.com/Silfenstudio"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/silfenstudio/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-tiktok"></i></a></li>
             </ul>
         </div>
         <section class="bag-grid">
@@ -101,16 +101,19 @@
                             <!-- <img src="" alt="" class="bag-pic2"> -->
                             <div class="material"></div>
                             <div class="fav-icon"><i class="far fa-heart"></i>
-                                <!-- <i class="fas fa-heart"></i> -->
                             </div>
-                            <div class="sold-out-tag">Sold Out</div>
-                            <!-- <div class="quickview">QUICKVIEW <span><i class="fas fa-search"></i></span></div> -->
+                            <div class="sold-out-tag hidden">Sold Out</div>
+                            <div class="quickview">QUICKVIEW <span><i class="fas fa-search"></i></span></div>
                         </div>
                     </a>
-                    <a href="bag.html" class="card-title"></a>
-                    <p class="color-name"> </p>
-                    <p class="price"></p>
-                    <p class="off"></p>
+                    <div class="card-info">
+                        <a href="" class="card-title"></a>
+                        <p class="price"></p>
+                    </div>
+                    <div class="card-info2">
+                        <p class="color-name"> </p>
+                        <p class="off hidden"></p>
+                    </div>
                 </div>
             </template>
         </section>
@@ -131,16 +134,16 @@
             <li>Contact</li>
         </ul>
         <div class="address">
-            <p>SILFEN STUDIO</p>
-            <p>Klareboderne 10, 1.
-                1115 Copenhagen K
+            <h5>SILFEN STUDIO</h5>
+            <p>Klareboderne 10, 1.<br>
+                1115 Copenhagen K<br>
                 Denmark
             </p>
             <p>Phone: +45 20518923 <br>
                 VAT: DK40912320</p>
         </div>
         <div class="warehouse">
-            <p>WAREHOUSE</p>
+            <h5>WAREHOUSE</h5>
             <p>Adax A/S, Att: Silfen Studio <br>
                 Vestre Hedevej 18 <br>
                 DK-4000 Roskilde<br>
