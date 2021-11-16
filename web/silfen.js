@@ -35,31 +35,40 @@ function showBags(bag) {
 
 {
   /* <section id="filter-nav">
-        <div id="filter-drop">
-            <h3 id="drop-txt">DROP <span><i class="fas fa-chevron-right"></i></span></h3>
-            <template id="drop">
-                <a href="filter.html"></a>
-            </template>
-        </div>
-        <div id="filter-mat">
-            <h3 id="mat-txt">MATERIAL <span><i class="fas fa-chevron-right"></i></span></h3>
-            <template id="mat">
-                <a href="filter.html"></a>
-            </template>
-        </div>
-        <div id="filter-type">
-            <h3 id="type-txt">TYPE <span><i class="fas fa-chevron-right"></i></span></h3>
-            <template id="type">
-                <a href="filter.html"></a>
-            </template>
-        </div>
-        <div id="filter-color">
-            <h3 id="color-txt">COLOR <span><i class="fas fa-chevron-right"></i></span></h3>
-            <template id="color">
-                <a href="filter.html"></a>
-            </template>
-        </div>
-    </section> */
+<div id="filter-drop">
+    <h3 id="drop-txt">DROP <span><i class="fas fa-chevron-right"></i></span></h3>
+    <ul>
+        <li><a href="">PROM</a></li>
+    </ul>
+</div>
+<div id="filter-mat">
+    <h3 id="mat-txt">MATERIAL <span><i class="fas fa-chevron-right"></i></span></h3>
+    <ul>
+        <li><a href="">Recycled Nylon</a></li>
+        <li><a href="">Vegan Leather</a></li>
+        <li><a href="">Leather</a></li>
+    </ul>
+</div>
+<div id="filter-type">
+    <h3 id="type-txt">TYPE <span><i class="fas fa-chevron-right"></i></span></h3>
+    <ul>
+        <li>Cross-body Bags</a></li>
+        <li>Handbags</a></li>
+    </ul>
+</div>
+<div id="filter-color">
+    <h3 id="color-txt">COLOR <span><i class="fas fa-chevron-right"></i></span></h3>
+    <ul>
+        <li><a href="">Angora</a></li>
+        <li><a href="">Cadet</a></li>
+        <li><a href="">Ensigned Blue</a></li>
+        <li><a href="">Galaxy</a></li>
+        <li><a href="">Icy Morning</a></li>
+        <li><a href="">Tangerine</a></li>
+        <li><a href="">Wasabi</a></li>
+    </ul>
+</div>
+</section> */
 }
 
 {
