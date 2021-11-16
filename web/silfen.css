@@ -74,6 +74,7 @@ header {
 #banner {
   height: 80vh;
   background-image: url(/assets/thora-model1.jpg);
+  /* background-image: url(web/assets/thora-model1.jpg); */
   background-size: 100%;
   background-position: bottom;
   position: relative;
@@ -305,6 +306,7 @@ footer ul li {
 @media screen and (max-width: 600px) {
   #banner {
     background-image: url(/assets/ulla-model.jpg);
+    /* background-image: url(web/assets/ulla-model.jpg); */
   }
   #filter-nav {
     flex-direction: column;
