@@ -20,6 +20,9 @@ function showBags(bag) {
   if (bag.sold_out >= 1) {
     clone.querySelector(".sold-out-tag").classList.remove("hidden");
     clone.querySelector(".bag-pic").classList.add("opacity");
+    clone.querySelector(".quickview").classList.add("hidden2");
+    clone.querySelector(".card-info").classList.add("grey-txt");
+    clone.querySelector(".card-title").classList.add("grey-txt");
   }
 
   if (bag.discount_price > 0) {
@@ -28,7 +31,7 @@ function showBags(bag) {
     clone.querySelector(".price").classList.add("old-price");
   }
   clone.querySelector(".bag-pic").src = bag.front_img.guid;
-  // clone.querySelector(".bag-img2").src = bag.model_img.guid;
+  //   clone.querySelector(".bag-pic2").src = bag.model_img.guid;
   clone.querySelector(".card-title").textContent = bag.model;
   clone.querySelector(".color-name").textContent = bag.color;
   clone.querySelector(".price").textContent = `${bag.price} kr.`;
@@ -38,68 +41,22 @@ function showBags(bag) {
   clone
     .querySelector(".card-title")
     .setAttribute("href", "bag.html?id=" + bag.id);
+  const aEl = clone.querySelector(".quickview");
+  aEl.addEventListener("click", showPopUp);
+
+  function showPopUp(e) {
+    e.preventDefault();
+    document.querySelector("#pop-up").classList.remove("hidden2");
+    document.querySelector("#qv-img1").src = bag.front_img.guid;
+    document
+      .querySelector("#close-pop-up")
+      .addEventListener("click", closePopUp);
+  }
 
   const parent = document.querySelector(".bag-grid");
   parent.appendChild(clone);
 }
 
-{
-  /* <section id="filter-nav">
-<div id="filter-drop">
-    <h3 id="drop-txt">DROP <span><i class="fas fa-chevron-right"></i></span></h3>
-    <ul>
-        <li><a href="">PROM</a></li>
-    </ul>
-</div>
-<div id="filter-mat">
-    <h3 id="mat-txt">MATERIAL <span><i class="fas fa-chevron-right"></i></span></h3>
-    <ul>
-        <li><a href="">Recycled Nylon</a></li>
-        <li><a href="">Vegan Leather</a></li>
-        <li><a href="">Leather</a></li>
-    </ul>
-</div>
-<div id="filter-type">
-    <h3 id="type-txt">TYPE <span><i class="fas fa-chevron-right"></i></span></h3>
-    <ul>
-        <li>Cross-body Bags</a></li>
-        <li>Handbags</a></li>
-    </ul>
-</div>
-<div id="filter-color">
-    <h3 id="color-txt">COLOR <span><i class="fas fa-chevron-right"></i></span></h3>
-    <ul>
-        <li><a href="">Angora</a></li>
-        <li><a href="">Cadet</a></li>
-        <li><a href="">Ensigned Blue</a></li>
-        <li><a href="">Galaxy</a></li>
-        <li><a href="">Icy Morning</a></li>
-        <li><a href="">Tangerine</a></li>
-        <li><a href="">Wasabi</a></li>
-    </ul>
-</div>
-</section> */
-}
-
-{
-  /* <template id="bag-template">
-                    <div class="bag-card">
-                        <a class="bag-link" href="">
-                            <div class="container">
-                                <img class="bag-pic" src="" alt="">
-                                <!-- <img src="" alt="" class="bag-pic2"> -->
-                                <div class="material"></div>
-                                <div class="fav-icon"><i class="far fa-heart"></i>
-                                    <!-- <i class="fas fa-heart"></i> -->
-                                </div>
-                                <div class="sold-out-tag">Sold Out <span><i class="far fa-tired"></i></span></div>
-                                <!-- <div class="quickview">QUICKVIEW <span><i class="fas fa-search"></i></span></div> -->
-                            </div>
-                        </a>
-                        <a href="bag.html" class="card-title"></a>
-                        <p class="color-name"> </p>
-                        <p class="price"></p>
-                        <p class="off"></p>
-                    </div>
-                </template> */
+function closePopUp() {
+  document.querySelector("#pop-up").classList.add("hidden2");
 }

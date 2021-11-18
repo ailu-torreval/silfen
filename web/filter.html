@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META NAME=“ROBOTS” CONTENT=“NOINDEX, NOFOLLOW”>
     <script src="https://kit.fontawesome.com/7729b06534.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="web/silfen.css"> -->
     <link rel="stylesheet" href="silfen.css">
@@ -13,9 +14,16 @@
 </head>
 
 <body>
+    <div class="burger-menu">
+        <a href="index.html" class="header-img"><img src="/assets/silfen-logo-black.png" alt=""></a>
+        <!-- <a href="index.html" class="m-header-img"><img src="web/assets/silfen-logo-black.png" alt=""></a> -->
+        <span><i class="fas fa-bars"></i></span>
+    </div>
+
     <header>
         <ul class="header-nav">
-            <li>SHOP</li>
+            <li><a href="index.html">SHOP</a>
+            </li>
             <li>ABOUT</li>
             <li>SUSTAINABILITY</li>
             <li>SILFEN PLAY</li>
@@ -40,28 +48,28 @@
     </section>
     <section id="filter-nav">
         <div id="filter-drop">
-            <h3 id="drop-txt">DROP <span><i class="fas fa-chevron-right"></i></span></h3>
-            <ul>
+            <h3 id="drop-txt">DROP <span class="drop-arrow"><i class="fas fa-chevron-right"></i></span></h3>
+            <ul class="drop-list hidden2">
                 <li><a href="index.html">PROM</a></li>
             </ul>
         </div>
         <div id="filter-mat">
-            <h3 id="mat-txt">MATERIAL <span><i class="fas fa-chevron-right"></i></span></h3>
-            <ul>
+            <h3 id="mat-txt">MATERIAL <span class="mat-arrow"><i class="fas fa-chevron-right"></i></span></h3>
+            <ul class="mat-list hidden2">
                 <li><a href="filter.html?category=5">Recycled Nylon</a></li>
                 <li><a href="filter.html?category=6">Vegan Leather</a></li>
             </ul>
         </div>
         <div id="filter-type">
-            <h3 id="type-txt">TYPE <span><i class="fas fa-chevron-right"></i></span></h3>
-            <ul>
+            <h3 id="type-txt">TYPE <span class="type-arrow"><i class="fas fa-chevron-right"></i></span></h3>
+            <ul class="type-list hidden2">
                 <li><a href="filter.html?category=7">Crossbody Bags</a></li>
                 <li><a href="filter.html?cateogry=8">Shoulder Bags</a></li>
             </ul>
         </div>
         <div id="filter-color">
-            <h3 id="color-txt">COLOR <span><i class="fas fa-chevron-right"></i></span></h3>
-            <ul>
+            <h3 id="color-txt">COLOR <span class="color-arrow"><i class="fas fa-chevron-right"></i></span></h3>
+            <ul class="color-list hidden2">
                 <li><a href="filter.html?category=18">
                         <div id="color1"></div>Angora
                     </a></li>
@@ -119,11 +127,9 @@
                 </div>
             </template>
         </section>
-        <section id="pop-up" class="hidden">
-            <i class="fas fa-times"></i>
+        <section id="pop-up" class="hidden2">
+            <span id="close-pop-up"><i class="fas fa-times"></i></span>
             <img src="" alt="" id="qv-img1">
-            <img src="" alt="" id="qv-img2">
-            <img src="" alt="" id="qv-img3">
         </section>
     </main>
     <footer>
