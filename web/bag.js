@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
-url = "http://magmadesign.dk/wp21/wp-json/wp/v2/bag/" + id;
+url = "https://magmadesign.dk/wp21/wp-json/wp/v2/bag/" + id;
 console.log(url);
 // document.querySelector("#prod-list-title").textContent = id;
 
