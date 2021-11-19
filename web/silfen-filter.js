@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const cat = urlParams.get("category");
 url =
-  "http://magmadesign.dk/wp21/wp-json/wp/v2/bag?_embed&per_page=100&categories=" +
+  "https://magmadesign.dk/wp21/wp-json/wp/v2/bag?_embed&per_page=100&categories=" +
   cat;
 
 fetch(url)
