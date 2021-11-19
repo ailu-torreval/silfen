@@ -55,6 +55,86 @@ function showBags(bag) {
 
   const parent = document.querySelector(".bag-grid");
   parent.appendChild(clone);
+  document.querySelector(".drop-arrow").addEventListener("click", showDrop);
+  document.querySelector(".mat-arrow").addEventListener("click", showMat);
+  document.querySelector(".type-arrow").addEventListener("click", showType);
+  document.querySelector(".color-arrow").addEventListener("click", showColor);
+}
+
+function showDrop() {
+  document.querySelector(".drop-arrow").removeEventListener("click", showDrop);
+  document.querySelector(".drop-list").classList.remove("hidden2");
+  document.querySelector(
+    ".drop-arrow"
+  ).innerHTML = `<i class="fas fa-chevron-down"></i>`;
+  document.querySelector(".drop-arrow").addEventListener("click", closeDrop);
+}
+
+function showMat() {
+  document.querySelector(".mat-arrow").removeEventListener("click", showMat);
+  document.querySelector(".mat-list").classList.remove("hidden2");
+  document.querySelector(
+    ".mat-arrow"
+  ).innerHTML = `<i class="fas fa-chevron-down"></i>`;
+  document.querySelector(".mat-arrow").addEventListener("click", closeMat);
+}
+
+function showType() {
+  document.querySelector(".type-arrow").removeEventListener("click", showType);
+  document.querySelector(".type-list").classList.remove("hidden2");
+  document.querySelector(
+    ".type-arrow"
+  ).innerHTML = `<i class="fas fa-chevron-down"></i>`;
+  document.querySelector(".type-arrow").addEventListener("click", closeType);
+}
+
+function showColor() {
+  document
+    .querySelector(".color-arrow")
+    .removeEventListener("click", showColor);
+  document.querySelector(".color-list").classList.remove("hidden2");
+  document.querySelector(
+    ".color-arrow"
+  ).innerHTML = `<i class="fas fa-chevron-down"></i>`;
+  document.querySelector(".color-arrow").addEventListener("click", closeColor);
+}
+
+function closeDrop() {
+  document.querySelector(".drop-arrow").removeEventListener("click", closeDrop);
+  document.querySelector(".drop-list").classList.add("hidden2");
+  document.querySelector(
+    ".drop-arrow"
+  ).innerHTML = `<i class="fas fa-chevron-right"></i>`;
+  document.querySelector(".drop-arrow").addEventListener("click", showDrop);
+}
+
+function closeMat() {
+  document.querySelector(".mat-arrow").removeEventListener("click", closeMat);
+  document.querySelector(".mat-list").classList.add("hidden2");
+  document.querySelector(
+    ".mat-arrow"
+  ).innerHTML = `<i class="fas fa-chevron-right"></i>`;
+  document.querySelector(".mat-arrow").addEventListener("click", showMat);
+}
+
+function closeType() {
+  document.querySelector(".type-arrow").removeEventListener("click", closeType);
+  document.querySelector(".type-list").classList.add("hidden2");
+  document.querySelector(
+    ".type-arrow"
+  ).innerHTML = `<i class="fas fa-chevron-right"></i>`;
+  document.querySelector(".type-arrow").addEventListener("click", showType);
+}
+
+function closeColor() {
+  document
+    .querySelector(".color-arrow")
+    .removeEventListener("click", closeColor);
+  document.querySelector(".color-list").classList.add("hidden2");
+  document.querySelector(
+    ".color-arrow"
+  ).innerHTML = `<i class="fas fa-chevron-right"></i>`;
+  document.querySelector(".color-arrow").addEventListener("click", showColor);
 }
 
 function closePopUp() {
