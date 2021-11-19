@@ -98,7 +98,7 @@ header {
 
 #banner {
   height: 80vh;
-  background-image: url(web/assets/thora-model1.jpg);
+  background-image: url("web/assets/thora-model1.jpg");
   /* background-image: url(web/assets/thora-model1.jpg); */
   background-size: 100%;
   background-position: bottom;
