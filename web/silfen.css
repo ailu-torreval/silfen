@@ -595,7 +595,7 @@ footer ul li {
   }
 
   #banner {
-    background-image: url(web/assets/ulla-model.jpg);
+    background-image: url("web/assets/ulla-model.jpg");
     background-position: right;
     background-repeat: no-repeat;
     background-size: 120%;
